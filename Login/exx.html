@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="logo.jpeg" alt="">
+                </span>
+                <div class="text header-text">
+                    <span class="name">Hello</span>
+                    <span class="proffession">World</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <br>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="">
+                            <i class='bx bx-user-circle icon'></i>
+                            <span class="text nav-text">User</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="">
+                            <i class='bx bx-calculator icon'></i>
+                            <span class="text nav-text">Bill</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="">
+                            <i class='bx bxl-redbubble icon'></i>
+                            <span class="text nav-text">Other Expenses</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom-content">
+                <li class="">
+                    <a href="">
+                        <i class='bx bx-cog icon'></i>
+                        <span class="text nav-text">Setting</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+      <div class="text">Dashboard</div>
+    </section>
+
+</body>
+<script>
+    const body = document.querySelector("body"),        
+    sidebar = document.querySelector(".sidebar"),
+    toggle = document.querySelector(".toggle");
+
+    toggle.addEventListener("click" , () =>{
+        sidebar.classList.toggle("close");
+    });
+</script>
+</html>
+<div class="flex pt-4">
+    <a href="/">
+      <img class="size-11 transition-transform duration-500 ease-in-out hover:rotate-[360deg]" src="images/app-logo.svg" alt="logo">
+    </a>
+  </div>

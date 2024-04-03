@@ -1,0 +1,362 @@
+
+:root {
+    --black: #000;
+    --pink:#e82968;
+    --deep_pink : #e91e63;
+    --white: #fff;
+    --light_blue:#03a9f4;
+    --light_green:#067d8b;
+  }
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    box-shadow:  0px 0px 10px -4px var(--black);
+
+}
+section {
+  /* position: relative;
+  width: 100%;
+  height: 550px; */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 100px;
+  min-height: 100vh;
+  /* margin-top: 100px; */
+  /* box-shadow:  0px 0px 11px -4px #000; */
+  /* box-sizing: border-box; */
+}
+
+section .imgBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+section .imgBx::before{
+  
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(78deg,var(--deep_pink),var(--light_blue));
+    z-index: 1;
+    mix-blend-mode: screen;
+
+}
+
+section .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .contentBx{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+section .contentBx .formBx
+{
+    width: 50%;
+}
+
+section .contentBx .formBx h2 {
+  color:var(--light_green);
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 20px;
+  border-bottom: 4px solid var(--deep_pink);
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+section .contentBx .formBx .inputBx{
+    position: relative;
+    /* margin-bottom: 20px; */ 
+}
+section .contentBx .formBx .inputBx i{
+
+    position:absolute;
+    top: 50%;
+    right: 20px;
+    font-size: 20px;
+   
+}
+
+section .contentBx .formBx .inputBx span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: var(--light_blue);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+
+
+section .contentBx .formBx .inputBx input{
+    width: 100%;
+    padding: 10px 45px 10px 15px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: var(--light_green);
+    background: transparent;
+    border-radius: 30px;
+}
+
+section .contentBx .formBx .inputBx input[type="submit"]
+{
+    background: var(--pink);
+    color: var(--white);
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 15px;
+}
+
+section .contentBx .formBx .inputBx input[type="submit"]:hover{
+    background:var(--pink);
+}
+
+@media  (max-width: 768px)
+{
+
+    section{
+        padding:0;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    section .imgBx
+    {
+        display: none;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        height: 550px;
+        display: flex;
+        box-shadow: none;
+    }
+
+    section .contentBx{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    section .contentBx .formBx{
+        width: 100%;
+        background: var(--white);
+        opacity: 0.9;
+        margin: 50px;
+    }
+
+    section .contentBx .formBx h3{
+            color: var(--light_green);
+            text-align: center;
+            margin: 30px 0 10px;
+            font-weight: 500px;
+    }
+
+}
+
+
+/* For Second  */
+
+/* :root {
+  --black: #000;
+  --pink: #e82968;
+  --deep_pink: #e91e63;
+  --white: #fff;
+  --light_blue: #03a9f4;
+  --light_green: #067d8b;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  padding: 50px;
+}
+
+.abc {
+  display: flex;
+  width: 100%; */
+  /* height: calc(100vh - 300px); */
+  /* box-shadow: 0px 0px 10px -4px var(--black);
+}
+
+section .imgBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+section .imgBx::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(78deg, var(--deep_pink), var(--light_blue));
+  z-index: 1;
+  mix-blend-mode: screen;
+}
+section .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section .contentBx {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+section .contentBx .formBx {
+  width: 50%;
+}
+
+section .contentBx .formBx h2 {
+  color: var(--light_green);
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 20px;
+  border-bottom: 4px solid var(--deep_pink);
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+section .contentBx .formBx .inputBx {
+  position: relative; */
+  /* margin-bottom: 20px; */
+/* }
+section .contentBx .formBx .inputBx i {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  font-size: 20px;
+}
+
+section .contentBx .formBx .inputBx span {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+  color: var(--light_blue);
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+section .contentBx .formBx .inputBx input {
+  width: 100%;
+  padding: 10px 45px 10px 15px;
+  outline: none;
+  font-weight: 400;
+  border: 1px solid #607d8b;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: var(--light_green);
+  background: transparent;
+  border-radius: 30px;
+}
+
+section .contentBx .formBx .inputBx input[type="submit"] {
+  background: var(--pink);
+  color: var(--white);
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 15px;
+}
+
+section .contentBx .formBx .inputBx input[type="submit"]:hover {
+  background: var(--pink);
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  section .imgBx {
+    display: none;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  section .contentBx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  section .contentBx .formBx {
+    width: 100%;
+    background: var(--white);
+    opacity: 0.9;
+    margin: 50px;
+  }
+
+  section .contentBx .formBx h3 {
+    color: var(--light_green);
+    text-align: center;
+    margin: 30px 0 10px;
+    font-weight: 500px;
+  }
+} */
