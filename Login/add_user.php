@@ -1358,7 +1358,7 @@ if (isset($_POST['update_user']) && !empty($_POST['user_id'])) {
             console.log(userId);
             console.log(disableDate);
 
-            $.ajax({
+            $.ajax({                   
                 type: "POST",
                 url: "ajax_delete_user.php",
                 data: {
