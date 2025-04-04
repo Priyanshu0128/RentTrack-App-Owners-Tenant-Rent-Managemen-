@@ -1,4 +1,4 @@
-#🏠 Rent-Track App: Owners & Tenants Rent Management
+# 🏠 Rent-Track App: Owners & Tenants Rent Management
 
 The Rent-Track App is a web-based platform designed to simplify and enhance landlord-tenant interactions by providing a centralized system for rent management, tenant allocation, and expense tracking. 
 
